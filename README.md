@@ -4,17 +4,20 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/casbin/tikv-watcher)](https://goreportcard.com/report/github.com/casbin/tikv-watcher)
 [![Go Reference](https://pkg.go.dev/badge/github.com/casbin/tikv-watcher.svg)](https://pkg.go.dev/github.com/casbin/tikv-watcher)
 
-Tikv-Watcher is the tikv watcher for casbin. With this library, Casbin can synchronize the policy with the database in multiple enforcer instances.
+TiKV Watcher is the [TiKV](https://github.com/tikv/tikv) watcher for Casbin. With this library, Casbin can synchronize the policy with the TiKV database in multiple enforcer instances.
 
-*Note: Considering that tikv doesn't have watch mechanism like etcd or channel like redis, this ugly implementation uses polling to achieve monitoring a certain key, which may cause some performance trouble*
+*Note: Considering that TiKV doesn't have watch mechanism like etcd or channel like Redis, this ugly implementation uses polling to achieve monitoring a certain key, which may cause some performance trouble*
 
-### Installation: 
+### Installation:
+
 ```shell
 go get github.com/casbin/tikv-watcher
 ```
 
 ### Single Example:
-start the tikv service before run this example
+
+start the TiKV service before run this example:
+
 ```golang
 package main
 
@@ -50,5 +53,7 @@ func main() {
 
 
 ```
+
 ### License:
+
 This project is under Apache 2.0 License. See the LICENSE file for the full license text.
