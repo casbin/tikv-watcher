@@ -1,4 +1,5 @@
-# Titv-Watcher
+# TiKV Watcher
+
 Tikv-Watcher is the Kitv watcher for casbin. With this library, Casbin can synchronize the policy with the database in multiple enforcer instances.
 
 *Note: Considering that tikv doesn't have watch mechanism like etcd or channel like redis, this ugly implementation uses polling to achieve monitoring a certain key, which may cause some performance trouble*
